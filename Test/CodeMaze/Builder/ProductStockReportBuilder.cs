@@ -12,7 +12,7 @@
         }
         public void BuildBody()
         {
-            _productStockReport.BodyPart = string.Join(Environment.NewLine, _products.Select(p=>$" product name: {p.Name} - price: {p.Price} \n"));
+            _productStockReport.BodyPart = string.Join(Environment.NewLine, _products.Select(p => $" product name: {p.Name} - price: {p.Price} \n"));
         }
 
         public void BuildFooter()
