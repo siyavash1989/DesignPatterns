@@ -3,6 +3,7 @@ using Microsoft.Extensions.DependencyInjection;
 using Test.CodeMaze.Builder;
 using Test.CodeMaze.BuilderRecursive;
 using Test.CodeMaze.BuilderRecursiveGeneric;
+using Test.CodeMaze.Composite;
 using Test.CodeMaze.FactoryMethod;
 using Test.CodeMaze.FactoryMethodPractice;
 using Test.CodeMaze.PracticeBuilder;
@@ -24,7 +25,7 @@ using Test.HttpClientHelper;
 
 
 //recursive
-var exe = new PracticeFMExecuter();
+var exe = new CompositeExecuter();
 exe.Execute();
 
 //var products = new List<Test.CodeMaze.PracticeBuilder.Product>
