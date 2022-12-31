@@ -8,6 +8,7 @@ using Test.CodeMaze.Composite;
 using Test.CodeMaze.FactoryMethod;
 using Test.CodeMaze.FactoryMethodPractice;
 using Test.CodeMaze.PracticeBuilder;
+using Test.CodeMaze.Strategy;
 using Test.HttpClientHelper;
 
 
@@ -26,7 +27,7 @@ using Test.HttpClientHelper;
 
 
 //recursive
-var exe = new CommandExecuter();
+var exe = new StrategyExecuter();
 exe.Execute();
 
 //var products = new List<Test.CodeMaze.PracticeBuilder.Product>
