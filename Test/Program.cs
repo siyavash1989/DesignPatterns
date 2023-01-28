@@ -11,6 +11,7 @@ using Test.CodeMaze.FactoryMethodPractice;
 using Test.CodeMaze.PracticeBuilder;
 using Test.CodeMaze.Strategy;
 using Test.HttpClientHelper;
+using Test.Other.Record;
 
 
 //var serviceprovider = new ServiceCollection()
@@ -28,8 +29,8 @@ using Test.HttpClientHelper;
 
 
 //recursive
-var exe = new FacadeExecuter();
-exe.Execute();
+//var exe = new FacadeExecuter();
+//exe.Execute();
 
 //var products = new List<Test.CodeMaze.PracticeBuilder.Product>
 //            {
@@ -47,3 +48,42 @@ exe.Execute();
 
 //CrudService service = new CrudService();
 //await service.Execute();
+
+
+//var person1 = new Person("moh", "Sha");
+//var person2 = new Person("moh", "Sha");
+//var person3 = new Person("ami", "Sha");
+
+//var person4 = new APerson("moh", "Sha");
+
+
+//Console.WriteLine($"person1 == person2 ?  {person1 == person2}");
+//Console.WriteLine($"person1 == person3 ?  {person1 == person3}");
+
+//Console.WriteLine($"person1 == person4 ?  {Equals(person1,person4)}");
+
+
+//var animal1 = new Animal("Dog", 12);
+//var animal2 = new Animal("Dog", 12);
+//var animal3 = animal1;
+
+//Console.WriteLine($"animal1 == animal2 ? {animal1 == animal2}");
+//Console.WriteLine($"animal1 == animal3 ? {animal1 == animal3}");
+
+
+//var person1 = new NewPerson { FirstName = "Moh", LastName = "Sha" };
+//var person2 = new NewPerson { FirstName = "Moh", LastName = "Sha" };
+//var person3 = new NewPerson { FirstName = "Ami", LastName = "Sha" };
+
+//person1.FirstName = "some thing else";
+
+var person1 = new AsianPerson("Moh", "Sha");
+//person1.FirstName = "";
+
+
+//cloning with 'with'
+var person2 = person1 with { LastName = "She" };
+var person3 = person1 with { };
+Console.WriteLine($"person1 == person3 ?  {person1 == person3}");
+
+Console.ReadKey();
