@@ -11,6 +11,8 @@ using Test.CodeMaze.FactoryMethodPractice;
 using Test.CodeMaze.PracticeBuilder;
 using Test.CodeMaze.Strategy;
 using Test.HttpClientHelper;
+using Test.Other.Concurrency;
+using Test.Other.Delegates;
 using Test.Other.Record;
 
 
@@ -77,13 +79,20 @@ using Test.Other.Record;
 
 //person1.FirstName = "some thing else";
 
-var person1 = new AsianPerson("Moh", "Sha");
+//var person1 = new AsianPerson("Moh", "Sha");
 //person1.FirstName = "";
 
 
 //cloning with 'with'
-var person2 = person1 with { LastName = "She" };
-var person3 = person1 with { };
-Console.WriteLine($"person1 == person3 ?  {person1 == person3}");
+//var person2 = person1 with { LastName = "She" };
+//var person3 = person1 with { };
+//Console.WriteLine($"person1 == person3 ?  {person1 == person3}");
+
+
+
+//Sample.RunActionFuncSample();
+
+var thread = new SampleThread();
+thread.DoSomething();
 
 Console.ReadKey();
