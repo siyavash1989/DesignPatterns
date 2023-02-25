@@ -14,6 +14,7 @@ using Test.HttpClientHelper;
 using Test.Other.Concurrency;
 using Test.Other.Delegates;
 using Test.Other.Record;
+using Test.Other.RefOut;
 
 
 //var serviceprovider = new ServiceCollection()
@@ -92,7 +93,13 @@ using Test.Other.Record;
 
 //Sample.RunActionFuncSample();
 
-var thread = new SampleThread();
-thread.DoSomething();
+//var thread = new SampleThread();
+//thread.DoSomething();
+
+
+//var sample = new RefOutTest();
+//sample.Executer();
+
+
 
 Console.ReadKey();
